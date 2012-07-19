@@ -37,6 +37,7 @@
 		F1EC00DD15B808DE0040EF49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC00DC15B808DE0040EF49 /* AppDelegate.m */; };
 		F1EC00E015B808DE0040EF49 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC00DF15B808DE0040EF49 /* MainViewController.m */; };
 		F1EC00E215B808DE0040EF49 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1EC00E115B808DE0040EF49 /* MainViewController.xib */; };
+		F1EC00EC15B80AD40040EF49 /* www in Resources */ = {isa = PBXBuildFile; fileRef = F1EC00EB15B80AD40040EF49 /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		F1EC00E115B808DE0040EF49 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		F1EC00E415B808DE0040EF49 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		F1EC00E515B808DE0040EF49 /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
+		F1EC00EB15B80AD40040EF49 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		F1EC008215B808DD0040EF49 = {
 			isa = PBXGroup;
 			children = (
+				F1EC00EB15B80AD40040EF49 /* www */,
 				F1EC00AE15B808DD0040EF49 /* FirstApp */,
 				F1EC009315B808DD0040EF49 /* Frameworks */,
 				F1EC009115B808DD0040EF49 /* Products */,
@@ -328,6 +331,7 @@
 				F1EC00D715B808DE0040EF49 /* Capture.bundle in Resources */,
 				F1EC00D915B808DE0040EF49 /* Cordova.plist in Resources */,
 				F1EC00E215B808DE0040EF49 /* MainViewController.xib in Resources */,
+				F1EC00EC15B80AD40040EF49 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +442,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -461,7 +465,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -481,6 +485,7 @@
 					"CORDOVA_FRAMEWORK=1",
 				);
 				INFOPLIST_FILE = "FirstApp/FirstApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					UIKit,
@@ -491,7 +496,7 @@
 					"-weak-lSystem",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -510,6 +515,7 @@
 					"CORDOVA_FRAMEWORK=1",
 				);
 				INFOPLIST_FILE = "FirstApp/FirstApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					UIKit,
@@ -520,7 +526,7 @@
 					"-weak-lSystem",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
